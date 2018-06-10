@@ -20,13 +20,13 @@ urls = [
 ]
 @client.event
 async def on_ready():
-    print ("Bot is ready my niggas")
+    print ("Ready")
 
 @client.event
 async def on_message(dog):
     if dog.content.startswith("zack_dog"):
         url = random.choice(urls)
-        await client.send_message(dog.channel,("<@174790907676065792> is this a dog?",url,))
+        await client.send_message(dog.channel,("<@discordUserIDgoeshere> is this a dog?",url,))
         
         
 client.run("Your token goes here")
